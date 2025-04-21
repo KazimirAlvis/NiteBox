@@ -8,7 +8,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-
 # OSX
 #
 .DS_Store
@@ -91,10 +90,10 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
->>>>>>> d5ab834 (fix proxy path for YouTube API)
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+

@@ -8,7 +8,6 @@ export default defineConfig({
       '/youtube': {
         target: 'https://www.googleapis.com',
         changeOrigin: true,
-
         rewrite: (path) => path.replace(/^\/youtube/, ''), // only one "/youtube"
       },
     },
