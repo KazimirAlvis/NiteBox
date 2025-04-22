@@ -1,12 +1,30 @@
 .thumb-row {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px;
-    scrollbar-width: none; /* Firefox */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(219px, 1fr));
+    gap: 16px;
+    padding: 2rem;
+}
+  
+  .thumb-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-align: center;
   }
   
-  .thumb-row::-webkit-scrollbar {
-    display: none; /* Chrome */
+  .thumb-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .thumb-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .thumb-card p {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: leftl;
   }
   
