@@ -1,0 +1,17 @@
+.thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px 60px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .thumb-grid.collapsed {
+    max-height: 220px;
+  }
+  
+  .thumb-grid.expanded {
+    max-height: 1000px;
+  }
+  

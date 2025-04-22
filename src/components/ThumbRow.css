@@ -1,0 +1,12 @@
+.thumb-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .thumb-row::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+  
