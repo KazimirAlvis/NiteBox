@@ -40,4 +40,19 @@
   .hero-screen.grid-up .thumb-section {
     bottom: 0; /* 👈 slides it up when ArrowDown is pressed */
   }
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Push it behind everything else */
+    pointer-events: none; /* Prevent it from blocking clicks */
+  }
+  
+  .yt-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   
