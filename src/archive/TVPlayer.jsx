@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
-import CategoryRow from '../components/CategoryRow';
+import CategoryRow from './CategoryRow';
 import './TVPlayer.css';
 
 const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
