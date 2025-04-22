@@ -1,15 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './pages/Landing';
+import { useState } from 'react';
+import HeroScreen from './pages/HeroScreen';
 import TVPlayer from './pages/TVPlayer';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/tv" element={<TVPlayer />} />
-      </Routes>
-    </Router>
+  const [hasStarted, setHasStarted] = useState(false);
+
+  return hasStarted ? (
+    <TVPlayer />
+  ) : (
+    <HeroScreen onContinue={() => setHasStarted(true)} />
   );
 }
 
