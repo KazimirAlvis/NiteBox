@@ -14,15 +14,21 @@
   gap: 10px;
   padding-bottom: 10px;
 }
-
-.thumbnails img {
-  width: 180px;
-  border-radius: 8px;
-  flex-shrink: 0;
-  border: 2px solid white;
-  transition: transform 0.2s;
+.thumb-tile {
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
 }
 
-.thumbnails img:hover {
+.thumb-image {
+  border-radius: 10px;
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.thumb-image:hover {
   transform: scale(1.05);
 }
+

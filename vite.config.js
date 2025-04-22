@@ -5,10 +5,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/youtube': {
+      '/api/youtube': {
         target: 'https://www.googleapis.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/youtube/, ''), // only one "/youtube"
+        rewrite: path => path.replace(/^\/api\/youtube/, '/youtube'),
+        secure: true,
+        headers: {
+          referer: 'https://www.googleapis.com',
+          origin: 'https://www.googleapis.com',
+        },
       },
     },
   },
